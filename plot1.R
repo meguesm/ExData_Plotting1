@@ -17,6 +17,9 @@ data_source <- read.table("./household_power_consumption.txt", header = TRUE, se
 ## Filter the data for the required dates 
 data_subset <- data_source[which(data_source[, "Date"] == as.Date("2007-02-01", "%Y-%m-%d") | data_source[, "Date"] == as.Date("2007-02-02", "%Y-%m-%d")),]
 
+## Reduce the text size
+par("cex" = 0.7)
+
 ## Create the graphic 
 hist(data_subset$Global_active_power, col = "Red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frecuency")
 
