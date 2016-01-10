@@ -1,6 +1,6 @@
 ## Exploratory Data Analysis - Week 1 - Course project
-## R code that creates: plot1.png
-## Author: MoisÃ©s EgÃ¼es
+## R code that creates: plot1.png 
+## Author: Moisés Egües
 
 ## Create the myDate and myTime classes to formatting the date and times variables
 setClass("myDate")
